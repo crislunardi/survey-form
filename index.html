@@ -7,5 +7,38 @@
     <link rel="stylessheet" href="styles.css">
 </head>
 <body>
+    <form id="survey-form">
+        <h1 id="title">Survey Form</h1>
+        <p id="description"> Please fill out this form to help us improve our service.</p>
+
+        <label id="name-label" for="name">Name: </label>
+        <input id="name" type="text" placeholder="Enter your name" required>
+
+        <label id="email-label" for="email">Email: </label>
+        <input id="email" type="email" placeholder="Enter your email" required>
+
+        <label id="number-label" for="number">Age: </label>
+        <input id="number" type="number" placeholder="Enter your age" min="18" max="120" required>
+
+        <label for="dropdown">Select an option:</label>
+        <select id="dropdown">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+        </select>
+
+        <fieldset>
+            <legend>Choose one:</legend>
+            <input id="checkbox1" type="checkbox" value="checkbox1">
+            <label for="checkbox1">Checkbox1</label>
+            
+            <input id="checkbox2" type="checkbox" value="checkbox2">
+            <label for="checkbox2">Checkbox2</label>
+        </fieldset>
+        
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" placeholder="Enter your comment here..."></textarea>
+
+        <button id="submit" type="submit">Submit</button>
+    </form>
 </body>
 </html>
